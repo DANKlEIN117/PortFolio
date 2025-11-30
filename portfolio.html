@@ -1,0 +1,243 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Dan Okoth | Portfolio</title>
+
+    <!-- Bootstrap CSS -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet">
+
+    <!-- Icons -->
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.1/font/bootstrap-icons.css">
+
+    <style>
+        body {
+            background-color: #111;
+            color: #fff;
+            scroll-behavior: smooth;
+            font-family: 'Poppins', sans-serif;
+        }
+
+        .gold {
+            color: #d4af37;
+        }
+
+        .gold-bg {
+            background-color: #d4af37;
+        }
+
+        nav.navbar {
+            background: #000;
+        }
+
+        #hero {
+            height: 100vh;
+            background: linear-gradient(rgba(0,0,0,0.85), rgba(0,0,0,0.85)),
+                        url('https://images.unsplash.com/photo-1487058792275-0ad4aaf24ca7?auto=format&fit=crop&w=1500&q=80');
+            background-size: cover;
+            background-position: center;
+            color: white;
+            opacity: 0;
+            transform: translateY(30px);
+            animation: fadeIn 1.3s forwards;
+        }
+
+        .section-title {
+            font-weight: 700;
+            margin-bottom: 20px;
+        }
+
+        .skill-box {
+            border: 1px solid #333;
+            padding: 15px;
+            border-radius: 8px;
+            text-align: center;
+            background: #1a1a1a;
+            transition: 0.3s;
+        }
+
+        .skill-box:hover {
+            background: #222;
+            transform: translateY(-5px);
+            border-color: #d4af37;
+        }
+
+        /* Fade + Slide Animation */
+        .fade-slide {
+            opacity: 0;
+            transform: translateY(40px);
+            animation: fadeSlide 1s forwards;
+        }
+
+        @keyframes fadeSlide {
+            to {
+                opacity: 1;
+                transform: translateY(0px);
+            }
+        }
+
+        @keyframes fadeIn {
+            to {
+                opacity: 1;
+                transform: translateY(0);
+            }
+        }
+
+        .social-icons a {
+            font-size: 30px;
+            margin: 0 15px;
+            color: #d4af37;
+            transition: 0.3s;
+        }
+
+        .social-icons a:hover {
+            color: #fff;
+            transform: translateY(-5px);
+        }
+    </style>
+</head>
+
+<body>
+
+<!-- NAVBAR -->
+<nav class="navbar navbar-expand-lg navbar-dark fixed-top">
+    <div class="container">
+        <a class="navbar-brand fw-bold gold" href="#">Dan Okoth</a>
+        <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navMenu">
+            <span class="navbar-toggler-icon"></span>
+        </button>
+
+        <div class="collapse navbar-collapse" id="navMenu">
+            <ul class="navbar-nav ms-auto">
+                <li class="nav-item"><a class="nav-link gold" href="#hero">Home</a></li>
+                <li class="nav-item"><a class="nav-link gold" href="#about">About</a></li>
+                <li class="nav-item"><a class="nav-link gold" href="#skills">Skills</a></li>
+                <li class="nav-item"><a class="nav-link gold" href="#projects">Projects</a></li>
+                <li class="nav-item"><a class="nav-link gold" href="#contact">Contact</a></li>
+            </ul>
+        </div>
+    </div>
+</nav>
+
+<!-- HERO SECTION -->
+<section id="hero" class="d-flex align-items-center justify-content-center text-center fade-slide">
+    <div>
+        <h1 class="fw-bold gold">Hi, I'm Dan Okoth</h1>
+        <h4 class="mb-4">Python Developer | Flask | Web Dev Enthusiast | MERN stack Developer</h4>
+        <a href="#projects" class="btn gold-bg text-dark btn-lg fw-bold">View My Work</a>
+    </div>
+</section>
+
+<!-- ABOUT -->
+<section id="about" class="py-5 fade-slide">
+    <div class="container text-center">
+        <h2 class="section-title gold">About Me</h2>
+        <p class="lead">
+            I’m a tech-driven developer with a solid background in Python, Flask, and web development.
+             I enjoy building clean, functional systems from web apps to mobile prototypes and 
+             I’m constantly exploring how software, 
+             networking, and user experience come together to solve real problems.
+
+            My journey started with Python, where I built small tools and scripts, 
+            then expanded into full-stack web development using Flask, HTML, CSS, Bootstrap, and JavaScript.
+             I’ve also worked on real projects like a farmers’ cooperative system and a church media platform, 
+             gaining hands-on experience with APIs, cloud storage, and database integration.
+
+            Right now, I’m leveling up in areas like networking, system architecture, 
+            and modern front-end frameworks as I work towards becoming a full-stack engineer. I love turning ideas 
+            into working solutions and pushing myself to learn something new every day.
+        </p>
+    </div>
+</section>
+
+<!-- SKILLS -->
+<section id="skills" class="py-5 fade-slide">
+    <div class="container">
+        <h2 class="section-title text-center gold">Skills</h2>
+
+        <div class="row g-4 mt-3">
+            <div class="col-md-3"><div class="skill-box">Python</div></div>
+            <div class="col-md-3"><div class="skill-box">Flask</div></div>
+            <div class="col-md-3"><div class="skill-box">HTML & CSS</div></div>
+            <div class="col-md-3"><div class="skill-box">Bootstrap</div></div>
+            <div class="col-md-3"><div class="skill-box">C</div></div>
+        </div>
+
+        <div class="row g-4 mt-3">
+            <div class="col-md-3"><div class="skill-box">JavaScript </div></div>
+            <div class="col-md-3"><div class="skill-box">Networking Basics</div></div>
+            <div class="col-md-3"><div class="skill-box">Git & GitHub</div></div>
+            <div class="col-md-3"><div class="skill-box">Responsive Design</div></div>
+            <div class="col-md-3"><div class="skill-box">Node.js</div></div>
+        </div>
+
+    </div>
+</section>
+
+<!-- PROJECTS -->
+<section id="projects" class="py-5 fade-slide">
+    <div class="container">
+        <h2 class="section-title text-center gold">Projects</h2>
+
+        <div class="row mt-4">
+
+            <div class="col-md-6">
+                <div class="card text-light bg-dark border-secondary shadow-sm mb-4">
+                    <div class="card-body">
+                        <h5 class="card-title gold">FamHealth</h5>
+                        <p class="card-text">A Platform where family registers her members and track their medicals in timely way. They are able to send SOS for emergency to nearest hospitals.</p>
+                        <p><strong class="gold">Tech:</strong> MongoDB, Express.js, React, Node.js</p>
+                        <a href="https://github.com/DANKlEIN117/FamHealth.git" class="btn gold-bg text-dark fw-bold">GitHub</a>
+                    </div>
+                </div>
+            </div>
+
+            <div class="col-md-6">
+                <div class="card text-light bg-dark border-secondary shadow-sm mb-4">
+                    <div class="card-body">
+                        <h5 class="card-title gold">Church Media Web App</h5>
+                        <p class="card-text">A system for uploading and displaying songs, videos, and photos via Cloudinary.</p>
+                        <p><strong class="gold">Tech:</strong> Python-Flask, Cloudinary, Bootstrap, HTML</p>
+                        <a href="https://github.com/DANKlEIN117/church_website.git" class="btn gold-bg text-dark fw-bold">GitHub</a>
+                    </div>
+                </div>
+            </div>
+
+        </div>
+    </div>
+</section>
+
+<!-- CONTACT -->
+<section id="contact" class="py-5 fade-slide">
+    <div class="container text-center">
+        <h2 class="section-title gold">Contact</h2>
+
+        <div class="social-icons mt-4">
+
+            <!-- GitHub -->
+            <a href="https://github.com/DANKlEIN117" title="GitHub"><i class="bi bi-github"></i></a>
+
+            <!-- WhatsApp -->
+            <a href="https://wa.me/254112090463" title="WhatsApp"><i class="bi bi-whatsapp"></i></a>
+
+            <!-- Instagram -->
+            <a href="#" title="Instagram"><i class="bi bi-instagram"></i></a>
+
+            <!-- Facebook -->
+            <a href="#" title="Facebook"><i class="bi bi-facebook"></i></a>
+
+            <!-- Twitter/X -->
+            <a href="#" title="Twitter"><i class="bi bi-twitter"></i></a>
+
+        </div>
+
+        <p class="mt-4">Email: <span class="gold">omondiokothdan@gmail.com</span></p>
+    </div>
+</section>
+
+<!-- BOOTSTRAP JS -->
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
+
+</body>
+</html>
